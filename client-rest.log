@@ -1,0 +1,20 @@
+INFO:root:Inicia la ejecuciï¿½n
+INFO:root:Consulta a http://api.open-notify.org/astros.jsonINFO:root:Inicia la ejecución
+INFO:root:Consulta a http://api.open-notify.org/astros.json
+ERROR:root:Esto es un error programado
+INFO:root:Inicia la ejecución
+INFO:root:Consulta a http://api.open-notify.org/astros.json
+ERROR:root:Esto es un error programado
+INFO:root:Respuesta de http://api.open-notify.org/astros.json : {'message': 'success', 'number': 10, 'people': [{'craft': 'ISS', 'name': 'Mark Vande Hei'}, {'craft': 'ISS', 'name': 'Oleg Novitskiy'}, {'craft': 'ISS', 'name': 'Pyotr Dubrov'}, {'craft': 'ISS', 'name': 'Thomas Pesquet'}, {'craft': 'ISS', 'name': 'Megan McArthur'}, {'craft': 'ISS', 'name': 'Shane Kimbrough'}, {'craft': 'ISS', 'name': 'Akihiko Hoshide'}, {'craft': 'ISS', 'name': 'Anton Shkaplerov'}, {'craft': 'ISS', 'name': 'Klim Shipenko'}, {'craft': 'ISS', 'name': 'Yulia Pereslid'}]}
+INFO:root:Inicia la ejecución
+INFO:root:Consulta a http://api.open-notify.org/astros.json
+ERROR:root:Esto es un error programado
+INFO:root:Respuesta de http://api.open-notify.org/astros.json : {'message': 'success', 'number': 10, 'people': [{'craft': 'ISS', 'name': 'Mark Vande Hei'}, {'craft': 'ISS', 'name': 'Oleg Novitskiy'}, {'craft': 'ISS', 'name': 'Pyotr Dubrov'}, {'craft': 'ISS', 'name': 'Thomas Pesquet'}, {'craft': 'ISS', 'name': 'Megan McArthur'}, {'craft': 'ISS', 'name': 'Shane Kimbrough'}, {'craft': 'ISS', 'name': 'Akihiko Hoshide'}, {'craft': 'ISS', 'name': 'Anton Shkaplerov'}, {'craft': 'ISS', 'name': 'Klim Shipenko'}, {'craft': 'ISS', 'name': 'Yulia Pereslid'}]}
+INFO:root:Inicia la ejecución
+INFO:root:Consulta a http://api.open-notify.org/astros.json
+ERROR:root:Esto es un error programado
+INFO:root:Respuesta de http://api.open-notify.org/astros.json : {'message': 'success', 'number': 10, 'people': [{'craft': 'ISS', 'name': 'Mark Vande Hei'}, {'craft': 'ISS', 'name': 'Oleg Novitskiy'}, {'craft': 'ISS', 'name': 'Pyotr Dubrov'}, {'craft': 'ISS', 'name': 'Thomas Pesquet'}, {'craft': 'ISS', 'name': 'Megan McArthur'}, {'craft': 'ISS', 'name': 'Shane Kimbrough'}, {'craft': 'ISS', 'name': 'Akihiko Hoshide'}, {'craft': 'ISS', 'name': 'Anton Shkaplerov'}, {'craft': 'ISS', 'name': 'Klim Shipenko'}, {'craft': 'ISS', 'name': 'Yulia Pereslid'}]}
+INFO:root:Inicia la ejecución
+INFO:root:Consulta a http://api.open-notify.org/astros.json
+ERROR:root:Esto es un error programado
+INFO:root:Respuesta de http://api.open-notify.org/astros.json : {'message': 'success', 'number': 10, 'people': [{'craft': 'ISS', 'name': 'Mark Vande Hei'}, {'craft': 'ISS', 'name': 'Oleg Novitskiy'}, {'craft': 'ISS', 'name': 'Pyotr Dubrov'}, {'craft': 'ISS', 'name': 'Thomas Pesquet'}, {'craft': 'ISS', 'name': 'Megan McArthur'}, {'craft': 'ISS', 'name': 'Shane Kimbrough'}, {'craft': 'ISS', 'name': 'Akihiko Hoshide'}, {'craft': 'ISS', 'name': 'Anton Shkaplerov'}, {'craft': 'ISS', 'name': 'Klim Shipenko'}, {'craft': 'ISS', 'name': 'Yulia Pereslid'}]}

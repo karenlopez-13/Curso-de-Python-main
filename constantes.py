@@ -1,0 +1,1 @@
+URL_SERVICIO = 'http://api.open-notify.org/astros.json'
