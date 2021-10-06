@@ -1,6 +1,11 @@
+from os import access
+import re
 import requests
 import logging
 import json
+import configparser
+
+from requests.models import HTTPBasicAuth
 
 #importar archivos locales
 from constantes import *
@@ -39,6 +44,47 @@ def run():
     elif(respuesta.status_code == 404):
         logging.warning(f'Ha ocurrido un error en la consulta {URL_SERVICIO}')
         logging.error(f'Ha ocurrido un error en la consulta {URL_SERVICIO}')
+
+    #Parametros en petición
+    #http://api.blogic.com.mx/api?lat=123.23&lon=221.23
+    parametros = { 'lat' : '45', 'lon': '180' }
+    logging.info(f'Consulta a {URL_SATELITE} con los parametros {parametros}')
+    respuesta = requests.get(URL_SATELITE, params=parametros)
+    print(respuesta.json())
+
+    #Ejemplo POST
+    datos = {'llave' : 'valor'} #diccionario
+    logging.info(f'Consulta a {MOCK_POST_URL}')
+    respuesta = requests.post(MOCK_POST_URL, data=datos)
+    print(respuesta.text)
+
+    #Acceder a los headers
+    print(respuesta.headers['date'])
+    print(respuesta.headers)
+
+    #Autenticación con GitHub
+    logging.info(f'Extrayendo información de configuración')
+    parser = configparser.ConfigParser() #instancia a una clase
+    parser.read(ENVIROMENT_DEV)
+    usuario = parser.get('credenciales', 'usuario')
+    password = parser.get('credenciales', 'password')
+
+    respuesta = requests.post(URL_GITHUB, auth=HTTPBasicAuth(username=usuario, password=password)) #forma llave valor
+    print(respuesta.json())
+
+    #Envio de encabezados 
+    access_token = parser.get('tokens','github')
+    encabezados = { 'Authorization' : f'Bearer {access_token}'}
+    respuesta = requests.get(URL_ACCESS_TOKEN, headers=encabezados)
+    print(respuesta.json())
+
+    #utilizando sessions para la persistencia de token
+    sesion = requests.Session()
+    sesion.headers.update({ 'Authorization' : f'Bearer {access_token}'})
+    respuesta = sesion.get(URL_ACCESS_TOKEN)
+    print(respuesta.json())
+    respuesta = sesion.post(MOCK_POST_URL, data=datos)
+    print(respuesta.json())
 
 #Entre point
 if __name__ == '__main__':
